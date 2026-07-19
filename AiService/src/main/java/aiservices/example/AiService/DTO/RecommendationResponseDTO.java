@@ -1,7 +1,10 @@
 package aiservices.example.AiService.DTO;
 
+import lombok.Data;
+
 import java.util.List;
 
+@Data
 public class RecommendationResponseDTO {
     private String id;
     private String activityId;
