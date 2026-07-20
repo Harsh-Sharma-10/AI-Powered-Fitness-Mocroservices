@@ -30,6 +30,7 @@ public class RecommendationController {
     }
     @GetMapping("/recommands/{acticityid}")
     public ResponseEntity<RecommendationResponseDTO> getallrecommandsbyactivity(@PathVariable String acticityid){
+        /// Endpoint for the Get all Activities via Activity Id
         return ResponseEntity.ok(recommServices.findByActivityId(acticityid));
     }
 }
